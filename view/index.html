@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- RequireJS -->
+		<script src="https://s3-us-west-2.amazonaws.com/alien-marketing/website/app/src/js/frontend/require.js"></script>
+
+	</head>
+	<body class="alm-app alm-25">
+
+		<div class="buildr-app">
+			<div class="buildr-content">
+				<div class="buildr-sections">
+					<div class="buildr-section">
+						<div class="buildr-section-title">basic inputs</div>
+						<div class="buildr-section-block">
+							<div class="buildr-section-block-title">buildr input</div>
+							<div class="buildr-section-block-item">
+								<div class="buildr-section-block-input">
+									<input type="text" class="buildr-section-block-value">
+								</div>
+							</div>
+						</div>
+						<div class="buildr-section-block">
+							<div class="buildr-section-block-title">buildr textarea</div>
+							<div class="buildr-section-block-item">
+								<div class="buildr-section-block-textarea">
+									<textarea class="buildr-section-block-value"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="buildr-section-block">
+							<div class="buildr-section-block-title">buildr select</div>
+							<div class="buildr-section-block-item">
+								<div class="buildr-section-block-select">
+									<select class="buildr-section-block-value">
+										<option selected disabled>select an option</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="buildr-section-block">
+							<div class="buildr-section-block-title">buildr radio</div>
+							<div class="buildr-section-block-item">
+								<div class="buildr-section-block-radio">
+									<label>
+										<input type="radio" name="buildr-radio-1" class="buildr-section-block-value" value="1">
+										1
+									</label>
+									<label>
+										<input type="radio" name="buildr-radio-1" class="buildr-section-block-value" value="2">
+										2
+									</label>
+									<label>
+										<input type="radio" name="buildr-radio-1" class="buildr-section-block-value" value="3">
+										3
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="buildr-section-block">
+							<div class="buildr-section-block-title">buildr checkbox</div>
+							<div class="buildr-section-block-item">
+								<div class="buildr-section-block-checkbox">
+									<label>
+										<input type="checkbox" class="buildr-section-block-value" value="1">
+										1
+									</label>
+									<label>
+										<input type="checkbox" class="buildr-section-block-value" value="2">
+										2
+									</label>
+									<label>
+										<input type="checkbox" class="buildr-section-block-value" value="3">
+										3
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="buildr-section"></div>
+					<div class="buildr-section"></div>
+					<div class="buildr-section"></div>
+					<div class="buildr-section"></div>
+				</div>
+			</div>
+			<div class="buildr-menu">
+
+			</div>
+		</div>
+
+		<script>
+			requirejs(['../src/js/config'],function(){
+				requirejs(['jQuery','buildr'],
+				function(){
+					let buildr = new Buildr();
+				});
+			});
+		</script>
+
+	</body>
+</html>
